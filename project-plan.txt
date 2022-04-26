@@ -1,0 +1,17 @@
+TO-DO:
+    must find a way to create a week's table to contain all shifts and by whom they are taken
+        * this will also contain a method to create a random timetable based on availability
+            and number of hours remaining
+    must also implement a PERSONAL timetable:
+        - one to contain to availability
+        - one to contain the shifts taken
+            * this timetable will also be the one to tell us the total of hours
+
+ADDITIONAL:
+    memorize employees in files with their names and ID
+    save/replace the week's timetable to a file
+    create a GUI:
+        - show employees
+        - show timetable in a nice format, instead of console
+        - add/remove employees
+        - rebuild timetable

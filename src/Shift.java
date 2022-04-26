@@ -1,0 +1,8 @@
+enum Shift {
+    MORNING,
+    MIDDLE,
+    EVENING,
+    MORNING_DOUBLE,
+    MIDDLE_DOUBLE,
+    EVENING_DOUBLE
+};
