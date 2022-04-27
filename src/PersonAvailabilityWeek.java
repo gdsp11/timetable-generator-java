@@ -7,7 +7,7 @@ public class PersonAvailabilityWeek {
     }
 
     public void SetAvailability(DayName dayToSet, Shift shiftToSet, boolean valueToSet) {
-        availabilityDays[DayName.IntFromDay(dayToSet)].SetAvailability(shiftToSet, valueToSet);
+        availabilityDays[DayName.IntFromDay(dayToSet)-1].SetAvailability(shiftToSet, valueToSet);
     }
     public boolean GetAvailability(DayName dayToGet, Shift shiftToGet) {
         return availabilityDays[DayName.IntFromDay(dayToGet) - 1].GetAvailability(shiftToGet);

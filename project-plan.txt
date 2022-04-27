@@ -3,7 +3,7 @@ TO-DO:
         * this will also contain a method to create a random timetable based on availability
             and number of hours remaining
     must also implement a PERSONAL timetable:
-        - one to contain to availability
+        - one to contain the availability   DONE
         - one to contain the shifts taken
             * this timetable will also be the one to tell us the total of hours
 

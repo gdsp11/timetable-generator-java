@@ -123,7 +123,7 @@ public class Main {
                         ClearConsole();
                         while (true) {
                             ClearConsole();
-                            System.out.println(listToSetIn.get(personChoiceInt).GetName());
+                            System.out.println(listToSetIn.get(personChoiceInt).GetName() + " - " + DayName.DayFromInt(dayChoiceInt));
                             System.out.format("1. %24s%16s\n", "Morning shift",
                                     listToSetIn.get(personChoiceInt).ShowAvailability(
                                             DayName.DayFromInt(dayChoiceInt), Shift.MORNING));
@@ -222,6 +222,7 @@ public class Main {
 
     private static String _readString() {
         String name;
+        System.out.print("Input: ");
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         try {
             name = reader.readLine();
