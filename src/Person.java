@@ -24,7 +24,19 @@ public class Person {
     public void SetName(String nameToSet) {
         personName = nameToSet;
     }
+    public String ShowAvailability(DayName dayToGet, Shift shiftToCheck) {
+        if (GetAvailability(dayToGet, shiftToCheck))
+            return "AVAILABLE";
 
+        return "UNAVAILABLE";
+    }
+    public void SwitchAvailability(DayName dayToSwitch, Shift shiftToSwitch) {
+        boolean crtAvailable = GetAvailability(dayToSwitch, shiftToSwitch);
+        availabilityWeek.SetAvailability(dayToSwitch, shiftToSwitch, !crtAvailable);
+    }
+    public boolean GetAvailability(DayName dayToGet, Shift shiftToCheck) {
+        return (availabilityWeek.GetAvailability(dayToGet, shiftToCheck));
+    }
     public String GetID() {
         return personID;
     }
